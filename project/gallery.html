@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="icon" type="image/x-icon" href="icons8-leaf-48.png">
+	<style>
+		@import 'style.css';
+		
+		.column > div {
+			position: relative;
+		}
+		.column > div:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			text-align: center;
+			font-size: 2rem;
+			font-family: 'Neucha', cursive;
+			color: white;
+			background-color: rgba(0, 0, 0, 0.3);
+			display: none;
+		}
+		.c1-1:after {
+			content: "Амурский тигр";
+		}
+		.c1-2:after {
+			content: "Дальневосточный Леопард";
+		}
+		.c1-3:after {
+			content: "Манул";
+		}
+		.c2-1:after {
+			content: "Красная Панда";
+		}
+		.c2-2:after {
+			content: "Бизон";
+		}
+		.c2-3:after {
+			content: "Рысь";
+		}
+		.c2-4:after {
+			content: "Рысь";
+		}
+		.c3-1:after {
+			content: "Филин";
+		}
+		.c3-2:after {
+			content: "Лань";
+		}
+		.c3-3:after {
+			content: "Unknown";
+		}
+		.c4-1:after {
+			content: "Большая Панда";
+		}
+		.c4-2:after {
+			content: "Белый Медведь";
+		}
+		.c4-3:after {
+			content: "Нерпа";
+		}
+		.c4-4:after {
+			content: "Вилорог";
+		}
+		.div:hover:after {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<header class="head">
+		<nav>
+			<a class="menu" href="index.html">Главная</a>
+			<a class="active" href="gallery.html">Галерея</a>
+			<a class="menu" href="help_us.html">Помочь нам</a>
+			<a class="menu" href="">FAQ</a>
+		</nav>
+		<div class="header_img_container">
+			<img class="logo" src="earth-svgrepo-com.svg" alt="">
+		</div>
+		<!--<form>
+			<input type="text" name="text" class="search" placeholder="Поиск...">
+			<input type="submit" name="submit" class="submit" value="Найти">
+		</form>!-->
+	</header>
+	<div class="gallery">
+		<div class="column">
+			<div class="div c1-1">
+				<img src="https://avatars.mds.yandex.net/get-zen_doc/1886085/pub_60c433e8fec57a5beabcdacd_60c4362aaa55f742549e7351/scale_1200" data-aos="flip-left">
+			</div>
+			<div class="div c1-2">
+				<img src="https://r4.mt.ru/u25/photo76EC/20757997348-0/original.gif" data-aos="flip-left">
+			</div>
+			<div class="div c1-3">
+				<img src="https://orshin.ru/wp-content/uploads/2020/07/manul.jpg" data-aos="flip-left">
+			</div>
+		</div>
+		<div class="column">
+			<div class="div c2-1">
+				<img src="https://cdn.culture.ru/images/cff36b70-aac9-564b-8c6e-ec92c848ee46" data-aos="flip-left">
+			</div>
+			<div class="div c2-2">
+				<img src="https://funart.pro/uploads/posts/2021-04/1618229122_49-p-zhivotnii-mir-belarusi-zhivotnie-krasivo-f-53.jpg" data-aos="flip-left">
+			</div>
+			<div class="div c2-3">
+				<img src="https://www.luchsprojekt-harz.de/luchsprojekt/de/bilder/Luchs_Pirsch_Winter_WilliRolfes.jpg" data-aos="flip-left">
+			</div>
+			<div class="div c2-4">
+				<img src="https://funart.pro/uploads/posts/2022-01/thumbs/1641869522_8-funart-pro-p-ris-bolshaya-zhivotnie-8.jpg" data-aos="flip-left">
+			</div>
+		</div>
+		<div class="column">
+			<div class="div c3-1">
+				<img src="https://r5.mt.ru/r15/photo1BEC/20677291107-0/jpg/bp.jpeg" data-aos="flip-left">
+			</div>
+			<div class="div c3-2">
+				<img src="https://i.artfile.ru/2048x1365_858085_[www.ArtFile.ru].jpg" data-aos="flip-left">
+			</div>
+			<div class="div c3-3">
+				<img src="https://avatars.mds.yandex.net/get-zen_doc/34175/pub_5d0239499415b000b0340c74_5d0239cc7fbd0100ae8b6921/scale_1200" data-aos="flip-left">
+			</div>
+		</div>
+		<div class="column">
+			<div class="div c4-1">
+				<img src="https://divino-d.com/uploads/product/33600/33697/03742c7862e611e6a6c7b8a386044966_d0f634cf987011e7a21f1866da87aa23.jpg" data-aos="flip-left">
+			</div>
+			<div class="div c4-2">
+				<img src="https://www.nede.li/sites/default/files/2018-03/1521733015_is1-weight.jpg" data-aos="flip-left">
+			</div>
+			<div class="div c4-3">
+				<img src="https://druzhniy-center.ru/wp-content/uploads/a/8/d/a8d68acf2268100fdfe2689300a0d541.jpeg" data-aos="flip-left">
+			</div>
+			<div class="div c4-4">
+				<img src="https://kipmu.ru/wp-content/uploads/krpnzhvtn.jpg" data-aos="flip-left">
+			</div>
+		</div>
+	</div>
+</body>
+	<footer>
+		<div class="container">
+			<div class="container_column" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+				<h3>О нас</h3>
+				<div class="container_content">
+					<a href="https://jsonplaceholder.typicode.com/">Тут будет ссылка</a>
+				</div>
+			</div>
+			<div class="container_column" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+				<h3>Пожертвования</h3>
+				<div class="container_content">
+					<a href="https://jsonplaceholder.typicode.com/">Тут будет ссылка</a>
+				</div>
+			</div>
+			<div class="container_column" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+				<h3>Мы в соцсетях</h3>
+				<div class="container_content">
+					<a href="https://jsonplaceholder.typicode.com/">Тут будет ссылка</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<label>© 2020 — 2022, Green World Foundation. All rights reserved.</label>
+	</footer>
+</html>
